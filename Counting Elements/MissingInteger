@@ -1,0 +1,16 @@
+# you can write to stdout for debugging purposes, e.g.
+# print("this is a debug message")
+
+def solution(A):
+    # Implement your solution here
+    m = 1
+    A = sorted(A)
+    for index, no  in enumerate(A[:-1]):
+        if no < 1:
+            continue
+        if no == A[index+1] or (no + 1) == A[index+1]:
+            continue
+        m = no + 1
+    if A[-1] > 1 and m <= 1 :
+        m = A[-1] + 1
+    return m
