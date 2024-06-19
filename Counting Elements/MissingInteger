@@ -14,3 +14,17 @@ def solution(A):
     if A[-1] > 1 and m <= 1 :
         m = A[-1] + 1
     return m
+
+
+
+# you can write to stdout for debugging purposes, e.g.
+# print("this is a debug message")
+
+def solution(A):
+    # Implement your solution here
+    A = set(A)
+    checker = 1
+    while True:
+        if checker not in A:
+            return checker
+        checker += 1
