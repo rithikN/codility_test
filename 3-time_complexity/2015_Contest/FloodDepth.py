@@ -36,4 +36,7 @@ def solution(A):
   return maxDepth 
 
 
+# can be solve this with prefix
+
+
 
